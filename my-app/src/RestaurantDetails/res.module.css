@@ -1,0 +1,98 @@
+body{
+    background-color: white;
+}
+.container{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    justify-content: center;
+    margin: auto;
+}
+img{
+    width:100px;
+    height: 120px;
+}
+
+.innerdiv{
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;    width: 500px;
+    justify-content: space-around;
+    padding: 2%;
+}
+.info>*{
+    text-align: justify;
+    margin-bottom: 6px;
+}
+.info>h2{
+    color: brown;
+}
+.info>p{
+    color: #95a4b0;
+}
+.rate>*{
+ text-align: right;
+}
+.rate>h3{
+    text-align: center;
+    width: 50px;
+    padding: 4%;
+    margin-left: 60px;
+    border-radius: 5px;
+background-color: #72a02b;
+color: white;
+
+}
+.sort{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 2%;
+    
+}
+.sort>button{
+    padding: 0.5%;
+    font-weight: bold;
+    font-size: medium;
+    color: white;
+}
+.pay{
+    background-color: #ccdcb3;
+    padding:6%;
+    border: 1px solid #72a02b;
+    margin-top:65%;
+}
+.Add>button{
+    padding: 0.5%;
+    font-weight: bold;
+    font-size: medium;
+    color: white;
+    background-color: #72a02b;
+}
+
+.form{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    padding: 2%;
+    margin: auto;
+    row-gap: 10px;
+}
+
+.page{
+    margin-top: 2%;
+    display: flex;
+    justify-content:center;
+    gap: 50px;
+}
+
+.page>button{
+    padding: 0.5%;
+    font-weight: bold;
+    font-size: medium;
+    color: white;
+    background-color: #a02b6b;
+}
