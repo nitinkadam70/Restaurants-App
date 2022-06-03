@@ -5,6 +5,7 @@ import styles from "./res.module.css"
 import Restaurant from "./Restaurant"
 
 
+
 const RestaurantDetails = () => {
 
     const [data, setData] = useState([])
@@ -59,6 +60,7 @@ const RestaurantDetails = () => {
     return (
         <>
             <h1 style={{ marginBottom: '20px', background: "black", color: "white", padding: "10px" }}>RESTAURANT DETAILS</h1>
+        
             <div className={styles.sort}>
                 <h2>Sort by rating </h2>
                 <button onClick={() => handleRate(1)}> 1 star</button>
@@ -94,9 +96,9 @@ const RestaurantDetails = () => {
 
             </div>
             <div className={styles.page}>
-                <button onClick={() => setPageNumber(pageNumber - 1)}>Previous</button>
+                <button disabled={pageNumber===1} onClick={() => setPageNumber(pageNumber - 1)}>Previous</button>
                 <h2> pageNumber : {pageNumber}</h2>
-                <button onClick={() => setPageNumber(pageNumber + 1)}>Next</button>
+                <button disabled={pageNumber===3} onClick={() => setPageNumber(pageNumber + 1)}>Next</button>
             </div>
         </>
 
